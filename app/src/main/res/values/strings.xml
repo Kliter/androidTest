@@ -21,4 +21,6 @@
     <string name="Sample_Text">Sample_Text</string>
     <string name="Button">Button</string>
     <string name="MergeTag">MergeTag</string>
+    <string name="bad">Bad</string>
+    <string name="good">Good</string>
 </resources>
