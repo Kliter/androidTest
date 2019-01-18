@@ -23,4 +23,6 @@
     <string name="MergeTag">MergeTag</string>
     <string name="bad">Bad</string>
     <string name="good">Good</string>
+    <string name="SquareLayout">SquareLayout</string>
+    <string name="MapTest">MapTest</string>
 </resources>
