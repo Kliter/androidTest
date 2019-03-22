@@ -17,5 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".ListViewTest.ListViewTestActivity"></activity>
+        <activity android:name=".PrefectureListView.PrefectureActivity"></activity>
     </application>
 </manifest>
