@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pokes">
+        <item>フシギダネ</item>
+        <item>フシギソウ</item>
+        <item>フシギバナ</item>
+        <item>ヒトカゲ</item>
+        <item>リザード</item>
+        <item>リザードン</item>
+        <item>ゼニガメ</item>
+        <item>カメール</item>
+        <item>カメックス</item>
+    </string-array>
+</resources>

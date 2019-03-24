@@ -2,5 +2,5 @@
     <string name="app_name">TestApp</string>PrefectureListView
     <string name="ListViewTest">ListView Test</string>
     <string name="PrefectureListView">PrefectureListView</string>
-
+    <string name="RecyclerViewTest">RecyclerView Test</string>
 </resources>
