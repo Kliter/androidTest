@@ -13,7 +13,7 @@ class RecyclerViewTestActivity: AppCompatActivity(), RecyclerViewTestViewHolder.
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recyclerviewtest)
 
-        val pokes = resources.getStringArray(R.array.pokes).toMutableList()
+        val pokes = resources.getStringArray(R.array.pokeName).toMutableList()
 
         recyclerView.adapter = RecyclerViewTestAdapter(this, this, pokes)
         recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)

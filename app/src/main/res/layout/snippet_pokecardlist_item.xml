@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/ivPokeImage"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPokeName"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_toEndOf="@+id/ivPokeImage"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPokeDescription"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_toEndOf="@+id/ivPokeImage"
+            android:layout_below="@+id/tvPokeName"
+            android:layout_margin="8dp"/>
+
+    </RelativeLayout>
+</android.support.design.card.MaterialCardView>

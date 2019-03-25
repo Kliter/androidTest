@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="pokes">
+    <string-array name="pokeName">
         <item>フシギダネ</item>
         <item>フシギソウ</item>
         <item>フシギバナ</item>
@@ -10,5 +10,16 @@
         <item>ゼニガメ</item>
         <item>カメール</item>
         <item>カメックス</item>
+    </string-array>
+    <string-array name="pokeDescription">
+        <item>うまれたときから せなかに しょくぶつの タネが あって すこしずつ おおきく そだつ。</item>
+        <item>つぼみが せなかに ついていて ようぶんを きゅうしゅうしていくと おおきな はなが さくという。</item>
+        <item>はなから うっとりする かおりが ただよい たたかうものの きもちを なだめてしまう。</item>
+        <item>うまれたときから しっぽに ほのおが ともっている。ほのおが きえたとき その いのちは おわって しまう。</item>
+        <item>シッポを ふりまわして あいてを なぎたおし するどい ツメで ズタズタに ひきさいてしまう。</item>
+        <item>ちじょう 1400メートル まで ハネを つかって とぶことができる。こうねつの ほのおを はく。</item>
+        <item>ながい くびを こうらのなかに ひっこめるとき いきおいよく みずでっぽうを はっしゃする。</item>
+        <item>ペットとして にんきが たかい。また けで おおわれた しっぽは ながいきする シンボルだ</item>
+        <item>からだが おもたく のしかかって あいてを きぜつさせる。ピンチの ときは カラに かくれる。</item>
     </string-array>
 </resources>

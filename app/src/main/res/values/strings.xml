@@ -3,4 +3,5 @@
     <string name="ListViewTest">ListView Test</string>
     <string name="PrefectureListView">PrefectureListView</string>
     <string name="RecyclerViewTest">RecyclerView Test</string>
+    <string name="PokeCardList">PokeCardList</string>
 </resources>
