@@ -20,5 +20,6 @@
         <activity android:name=".PrefectureListView.PrefectureActivity"></activity>
         <activity android:name=".RecyclerViewTest.RecyclerViewTestActivity"></activity>
         <activity android:name=".PokeCardList.PokeCardListActivity"></activity>
+        <activity android:name=".TextInputTest.TextInputTestActivity"></activity>
     </application>
 </manifest>

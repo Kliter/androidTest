@@ -4,4 +4,8 @@
     <string name="PrefectureListView">PrefectureListView</string>
     <string name="RecyclerViewTest">RecyclerView Test</string>
     <string name="PokeCardList">PokeCardList</string>
+    <string name="TextInputTest">TextInput Test</string>
+    <string name="Text">Text</string>
+    <string name="TextPassword">TextPassword</string>
+    <string name="NumberPassword">NumberPassword</string>
 </resources>

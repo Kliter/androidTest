@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/roboto_light</item>
     </style>
 
     <style name="Widget.TestApp.Toolbar" parent="Widget.AppCompat.Toolbar">
@@ -17,5 +18,14 @@
 
     <style name="TextAppearance.TestApp.Toolbar" parent="TextAppearance.MaterialComponents.Button">
         <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="TextAppearance.TestApp.Roboto" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:color">@color/white</item>
+    </style>
+
+    <style name="Widget.TestApp.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
     </style>
 </resources>
