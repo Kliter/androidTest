@@ -56,21 +56,30 @@ class MainActivity: AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.mainmenu, menu)
+        menuInflater.inflate(R.menu.menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?) = when (item?.itemId) {
-        R.id.action_setting -> {
-            true
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        val intent = Intent()
+        when (item?.itemId) {
+            R.id.action_listviewtest -> {
+                intent.setClass(this, ListViewTestActivity::class.java)
+            }
+            R.id.action_prefecture_listview -> {
+                intent.setClass(this, PrefectureActivity::class.java)
+            }
+            R.id.action_recyclerviewtest -> {
+                intent.setClass(this, RecyclerViewTestActivity::class.java)
+            }
+            R.id.action_pokecardlist -> {
+                intent.setClass(this, PokeCardListActivity::class.java)
+            }
+            R.id.action_textinput -> {
+                intent.setClass(this, TextInputTestActivity::class.java)
+            }
         }
-
-        R.id.action_favorite -> {
-            true
-        }
-
-        else -> {
-            super.onOptionsItemSelected(item)
-        }
+        startActivity(intent)
+        return super.onOptionsItemSelected(item)
     }
 }

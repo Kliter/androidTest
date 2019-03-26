@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@drawable/ic_action_heart"
+        android:title="@string/ActionHeart"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_listviewtest"
+        android:title="@string/ListViewTest"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_prefecture_listview"
+        android:title="@string/PrefectureListView"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_recyclerviewtest"
+        android:title="@string/RecyclerViewTest"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_pokecardlist"
+        android:title="@string/PokeCardList"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_textinput"
+        android:title="@string/TextInputTest"
+        app:showAsAction="never"/>
+</menu>
