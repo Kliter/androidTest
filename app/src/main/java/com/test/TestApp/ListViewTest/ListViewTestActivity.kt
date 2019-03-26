@@ -2,14 +2,18 @@ package com.test.TestApp.ListViewTest
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.Toolbar
+import android.view.Menu
 import com.test.TestApp.R
 import kotlinx.android.synthetic.main.activity_listview.*
+import kotlinx.android.synthetic.main.snippet_toolbar.*
 
 class ListViewTestActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_listview)
+        setupToolbar()
 
         val names: List<String> = listOf(
                 "User1",
@@ -41,5 +45,21 @@ class ListViewTestActivity: AppCompatActivity() {
 
         val adapter = ListViewTestAdapter(this, listItems)
         listView.adapter = adapter
+    }
+
+    private fun setupToolbar() {
+        val toolbar: Toolbar = app_bar
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.mainmenu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return super.onSupportNavigateUp()
     }
 }
