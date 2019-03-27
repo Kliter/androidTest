@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import com.test.TestApp.ListViewTest.ListViewTestActivity
+import com.test.TestApp.MainActivity
 import com.test.TestApp.PokeCardList.PokeCardListActivity
 import com.test.TestApp.R
 import com.test.TestApp.RecyclerViewTest.RecyclerViewTestActivity
@@ -19,6 +20,7 @@ class PrefectureActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_prefecture_listview)
         setupToolbar()
+        setupBottomNavigationView()
 
         val prefectureIcons: List<Int> = listOf(
                 R.drawable.hokkaido_dousho,
@@ -84,8 +86,31 @@ class PrefectureActivity: AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
+    private fun setupBottomNavigationView() {
+        bottomNavigationView.setOnNavigationItemSelectedListener {
+            val intent = Intent()
+            when (it.itemId) {
+                R.id.action_home -> {
+                    intent.setClass(this, MainActivity::class.java)
+                    startActivity(intent)
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.action_search -> {
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.action_notification -> {
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.action_mail -> {
+                    return@setOnNavigationItemSelectedListener true
+                }
+            }
+            return@setOnNavigationItemSelectedListener false
+        }
+    }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu, menu)
+        menuInflater.inflate(R.menu.menu_top, menu)
         return super.onCreateOptionsMenu(menu)
     }
 

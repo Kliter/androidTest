@@ -1,9 +1,11 @@
 package com.test.TestApp.ListViewTest
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.Menu
+import com.test.TestApp.MainActivity
 import com.test.TestApp.R
 import kotlinx.android.synthetic.main.activity_listview.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
@@ -14,6 +16,7 @@ class ListViewTestActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_listview)
         setupToolbar()
+        setupBottomNavigationView()
 
         val names: List<String> = listOf(
                 "User1",
@@ -53,8 +56,32 @@ class ListViewTestActivity: AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
+    private fun setupBottomNavigationView() {
+        bottomNavigationView.selectedItemId = R.id.action_search
+        bottomNavigationView.setOnNavigationItemSelectedListener {
+            val intent = Intent()
+            when (it.itemId) {
+                R.id.action_home -> {
+                    intent.setClass(this, MainActivity::class.java)
+                    startActivity(intent)
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.action_search -> {
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.action_notification -> {
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.action_mail -> {
+                    return@setOnNavigationItemSelectedListener true
+                }
+            }
+            return@setOnNavigationItemSelectedListener false
+        }
+    }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu, menu)
+        menuInflater.inflate(R.menu.menu_top, menu)
         return super.onCreateOptionsMenu(menu)
     }
 

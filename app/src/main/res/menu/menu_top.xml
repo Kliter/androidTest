@@ -3,12 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_favorite"
-        android:icon="@drawable/ic_action_heart"
-        android:title="@string/ActionHeart"
-        app:showAsAction="ifRoom"/>
-
-    <item
         android:id="@+id/action_listviewtest"
         android:title="@string/ListViewTest"
         app:showAsAction="never"/>

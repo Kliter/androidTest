@@ -20,6 +20,7 @@ class MainActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setupToolbar()
+        setupBottomNavigationView()
         setupWidget()
     }
 
@@ -55,8 +56,32 @@ class MainActivity: AppCompatActivity() {
         setSupportActionBar(toolbar)
     }
 
+    private fun setupBottomNavigationView() {
+        bottomNavigationView.selectedItemId = R.id.action_home
+        bottomNavigationView.setOnNavigationItemSelectedListener {
+            val intent = Intent()
+            when (it.itemId) {
+                R.id.action_home -> {
+                    intent.setClass(this, MainActivity::class.java)
+                    startActivity(intent)
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.action_search -> {
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.action_notification -> {
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.action_mail -> {
+                    return@setOnNavigationItemSelectedListener true
+                }
+            }
+            return@setOnNavigationItemSelectedListener false
+        }
+    }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu, menu)
+        menuInflater.inflate(R.menu.menu_top, menu)
         return super.onCreateOptionsMenu(menu)
     }
 

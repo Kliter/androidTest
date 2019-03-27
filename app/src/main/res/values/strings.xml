@@ -8,6 +8,8 @@
     <string name="Text">Text</string>
     <string name="TextPassword">TextPassword</string>
     <string name="NumberPassword">NumberPassword</string>
-    <string name="ActionHeart">ActionHeart</string>
-    <string name="ActionSetting">ActionSetting</string>
+    <string name="ActionHome">Home</string>
+    <string name="ActionSearch">Search</string>
+    <string name="ActionNotification">Notification</string>
+    <string name="ActionMail">Mail</string>
 </resources>
