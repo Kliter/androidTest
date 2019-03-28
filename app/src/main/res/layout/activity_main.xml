@@ -28,9 +28,7 @@
                     android:id="@+id/btnListViewTest"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_margin="8dp"
                     android:text="@string/ListViewTest"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -41,9 +39,7 @@
                     android:id="@+id/btnPrefectureListView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_margin="8dp"
                     android:text="@string/PrefectureListView"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -54,39 +50,32 @@
                     android:id="@+id/btnRecyclerViewTest"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_margin="8dp"
                     android:text="@string/RecyclerViewTest"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
                     style="Widget.TestApp.Button"/>
 
                 <Button
                     android:id="@+id/btnPokeCardList"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_margin="8dp"
                     android:text="@string/PokeCardList"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
                     style="Widget.TestApp.Button"/>
 
                 <Button
                     android:id="@+id/btnTextInputTest"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_margin="8dp"
                     android:text="@string/TextInputTest"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/Widget.TestApp.Button"/>
+
+                <Button
+                    android:id="@+id/btnVolleyTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/VolleyTest"
                     style="@style/Widget.TestApp.Button"/>
 
         </LinearLayout>

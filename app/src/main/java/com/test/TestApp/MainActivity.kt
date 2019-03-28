@@ -3,7 +3,6 @@ package com.test.TestApp
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import com.test.TestApp.ListViewTest.ListViewTestActivity
@@ -11,6 +10,9 @@ import com.test.TestApp.PokeCardList.PokeCardListActivity
 import com.test.TestApp.PrefectureListView.PrefectureActivity
 import com.test.TestApp.RecyclerViewTest.RecyclerViewTestActivity
 import com.test.TestApp.TextInputTest.TextInputTestActivity
+import com.test.TestApp.Util.BottomNavigationViewManager
+import com.test.TestApp.Util.ToolbarManager
+import com.test.TestApp.VolleyTest.VolleyTestActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 
@@ -19,8 +21,9 @@ class MainActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setupToolbar()
-        setupBottomNavigationView()
+        ToolbarManager.setupToolbar(this, app_bar)
+        bottomNavigationView.selectedItemId = R.id.action_home
+        BottomNavigationViewManager.setupBottomNavigationView(this, bottomNavigationView)
         setupWidget()
     }
 
@@ -49,34 +52,9 @@ class MainActivity: AppCompatActivity() {
             val intent =  Intent(this, TextInputTestActivity::class.java)
             startActivity(intent)
         }
-    }
-
-    private fun setupToolbar() {
-        val toolbar: Toolbar = app_bar
-        setSupportActionBar(toolbar)
-    }
-
-    private fun setupBottomNavigationView() {
-        bottomNavigationView.selectedItemId = R.id.action_home
-        bottomNavigationView.setOnNavigationItemSelectedListener {
-            val intent = Intent()
-            when (it.itemId) {
-                R.id.action_home -> {
-                    intent.setClass(this, MainActivity::class.java)
-                    startActivity(intent)
-                    return@setOnNavigationItemSelectedListener true
-                }
-                R.id.action_search -> {
-                    return@setOnNavigationItemSelectedListener true
-                }
-                R.id.action_notification -> {
-                    return@setOnNavigationItemSelectedListener true
-                }
-                R.id.action_mail -> {
-                    return@setOnNavigationItemSelectedListener true
-                }
-            }
-            return@setOnNavigationItemSelectedListener false
+        btnVolleyTest.setOnClickListener {
+            val intent = Intent(this, VolleyTestActivity::class.java)
+            startActivity(intent)
         }
     }
 
@@ -85,26 +63,8 @@ class MainActivity: AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        val intent = Intent()
-        when (item?.itemId) {
-            R.id.action_listviewtest -> {
-                intent.setClass(this, ListViewTestActivity::class.java)
-            }
-            R.id.action_prefecture_listview -> {
-                intent.setClass(this, PrefectureActivity::class.java)
-            }
-            R.id.action_recyclerviewtest -> {
-                intent.setClass(this, RecyclerViewTestActivity::class.java)
-            }
-            R.id.action_pokecardlist -> {
-                intent.setClass(this, PokeCardListActivity::class.java)
-            }
-            R.id.action_textinput -> {
-                intent.setClass(this, TextInputTestActivity::class.java)
-            }
-        }
-        startActivity(intent)
-        return super.onOptionsItemSelected(item)
+    override fun onOptionsItemSelected(menuItem: MenuItem?): Boolean {
+        ToolbarManager.setOptionsItemSelected(this, menuItem)
+        return super.onOptionsItemSelected(menuItem)
     }
 }

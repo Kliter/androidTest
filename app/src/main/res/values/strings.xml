@@ -12,4 +12,8 @@
     <string name="ActionSearch">Search</string>
     <string name="ActionNotification">Notification</string>
     <string name="ActionMail">Mail</string>
+    <string name="VolleyTest">Volley Test</string>
+    <string name="RequestTest">Request Test</string>
+    <string name="Execute">Execute</string>
+    <string name="Result">Result : </string>
 </resources>
