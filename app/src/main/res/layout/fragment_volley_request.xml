@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/btnSendRequest"
+        android:layout_margin="8dp"
+        style="@style/Widget.TestApp.Button"
+        android:text="@string/Execute"/>
+
+    <TextView
+        android:id="@+id/tvResultLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSendRequest"
+        android:layout_margin="8dp"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:text="@string/Result" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tvResult"
+        android:layout_below="@+id/tvResultLabel"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:backgroundTint="@color/colorPrimary"/>
+
+</RelativeLayout>

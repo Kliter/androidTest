@@ -14,7 +14,7 @@ import com.test.TestApp.RecyclerViewTest.RecyclerViewTestActivity
 import com.test.TestApp.TextInputTest.TextInputTestActivity
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 
-class ToolbarManager(context: Context) {
+class ToolbarManager {
 
     companion object ToolbarManager {
 

@@ -16,4 +16,7 @@
     <string name="RequestTest">Request Test</string>
     <string name="Execute">Execute</string>
     <string name="Result">Result : </string>
+    <string name="UseCustomRequestQueue">useCustomRequestQueue</string>
+    <string name="MakeStandardRequest">MakeStandardRequest</string>
+    <string name="WeatherForecast">WeatherForecast</string>
 </resources>
