@@ -18,5 +18,11 @@
     <string name="Result">Result : </string>
     <string name="UseCustomRequestQueue">useCustomRequestQueue</string>
     <string name="MakeStandardRequest">MakeStandardRequest</string>
-    <string name="WeatherForecast">WeatherForecast</string>
+    <string name="VolleyPractice">VolleyPractice</string>
+    <string name="GET">GET</string>
+    <string name="POST">POST</string>
+    <string name="PUT">PUT</string>
+    <string name="PATCH">PATCH</string>
+    <string name="DELETE">DELETE</string>
+    <string name="ImageLoader">ImageLoader</string>
 </resources>

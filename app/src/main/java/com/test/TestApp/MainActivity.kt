@@ -12,6 +12,7 @@ import com.test.TestApp.RecyclerViewTest.RecyclerViewTestActivity
 import com.test.TestApp.TextInputTest.TextInputTestActivity
 import com.test.TestApp.Util.BottomNavigationViewManager
 import com.test.TestApp.Util.ToolbarManager
+import com.test.TestApp.VolleyPractice.VolleyPracticeActivity
 import com.test.TestApp.VolleyTest.VolleyTestActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
@@ -54,6 +55,10 @@ class MainActivity: AppCompatActivity() {
         }
         btnVolleyTest.setOnClickListener {
             val intent = Intent(this, VolleyTestActivity::class.java)
+            startActivity(intent)
+        }
+        btnVolleyPractice.setOnClickListener {
+            val intent = Intent(this, VolleyPracticeActivity::class.java)
             startActivity(intent)
         }
     }
