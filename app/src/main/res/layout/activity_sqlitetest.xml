@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<EditText
+		android:layout_width="96dp"
+		android:layout_height="wrap_content"
+		android:id="@+id/edit_text_key"
+		android:layout_marginTop="48dp"
+		android:layout_marginStart="48dp"
+		android:hint="Title"/>
+
+	<EditText
+		android:layout_width="96dp"
+		android:layout_height="wrap_content"
+		android:id="@+id/edit_text_value"
+		android:layout_toEndOf="@+id/edit_text_key"
+		android:layout_marginTop="48dp"
+		android:layout_marginStart="48dp"
+		android:hint="Score"/>
+
+	<android.support.design.button.MaterialButton
+		android:layout_width="96dp"
+		android:layout_height="wrap_content"
+		android:id="@+id/btnShowData"
+		android:layout_below="@+id/edit_text_key"
+		android:layout_marginTop="48dp"
+		android:layout_marginStart="48dp"
+		android:text="表示"/>
+
+	<android.support.design.button.MaterialButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/btnAddData"
+		android:layout_below="@id/edit_text_value"
+		android:layout_toEndOf="@id/btnShowData"
+		android:layout_marginTop="48dp"
+		android:layout_marginStart="48dp"
+		android:text="データ追加"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/text_view"
+		android:layout_below="@id/btnShowData"
+		android:layout_margin="48dp"/>
+
+</RelativeLayout>

@@ -86,6 +86,14 @@
                     android:text="@string/VolleyPractice"
                     style="@style/Widget.TestApp.Button"/>
 
+                <Button
+                    android:id="@+id/btnSQLiteTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="@string/SQLiteTest"
+                    style="@style/Widget.TestApp.Button"/>
+
         </LinearLayout>
 
         <android.support.design.widget.BottomNavigationView

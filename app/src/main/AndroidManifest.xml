@@ -25,6 +25,7 @@
         <activity android:name=".TextInputTest.TextInputTestActivity"></activity>
         <activity android:name=".VolleyTest.VolleyTestActivity"></activity>
         <activity android:name=".VolleyPractice.VolleyPracticeActivity"></activity>
+        <activity android:name=".SQLiteTest.SQLiteTestActivity"></activity>
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
     </application>
 </manifest>

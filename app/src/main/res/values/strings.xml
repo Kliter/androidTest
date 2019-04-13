@@ -25,4 +25,5 @@
     <string name="PATCH">PATCH</string>
     <string name="DELETE">DELETE</string>
     <string name="ImageLoader">ImageLoader</string>
+    <string name="SQLiteTest">SQLite Test</string>
 </resources>
