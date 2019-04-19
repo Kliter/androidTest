@@ -1,109 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
         
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/appbar_layout"
             android:elevation="4dp">
 
                 <include layout="@layout/snippet_toolbar"/>
 
         </android.support.design.widget.AppBarLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:id="@+id/linearLayout"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomNavigationView"
+            android:layout_below="@+id/appbar_layout">
 
-                <Button
-                    android:id="@+id/btnListViewTest"
+                <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:text="@string/ListViewTest"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    style="Widget.TestApp.Button"/>
+                    android:layout_height="match_parent">
 
-                <Button
-                    android:id="@+id/btnPrefectureListView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:text="@string/PrefectureListView"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    style="Widget.TestApp.Button"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/linearLayout"
+                            android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/btnRecyclerViewTest"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:text="@string/RecyclerViewTest"
-                    style="Widget.TestApp.Button"/>
+                                <Button
+                                    android:id="@+id/btnListViewTest"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:text="@string/ListViewTest"
+                                    style="Widget.TestApp.Button"/>
 
-                <Button
-                    android:id="@+id/btnPokeCardList"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:text="@string/PokeCardList"
-                    style="Widget.TestApp.Button"/>
+                                <Button
+                                    android:id="@+id/btnPrefectureListView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:text="@string/PrefectureListView"
+                                    style="Widget.TestApp.Button"/>
 
-                <Button
-                    android:id="@+id/btnTextInputTest"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:text="@string/TextInputTest"
-                    style="@style/Widget.TestApp.Button"/>
+                                <Button
+                                    android:id="@+id/btnRecyclerViewTest"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:text="@string/RecyclerViewTest"
+                                    style="Widget.TestApp.Button"/>
 
-                <Button
-                    android:id="@+id/btnVolleyTest"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:text="@string/VolleyTest"
-                    style="@style/Widget.TestApp.Button"/>
+                                <Button
+                                    android:id="@+id/btnPokeCardList"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:text="@string/PokeCardList"
+                                    style="Widget.TestApp.Button"/>
 
-                <Button
-                    android:id="@+id/btnVolleyPractice"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:text="@string/VolleyPractice"
-                    style="@style/Widget.TestApp.Button"/>
+                                <Button
+                                    android:id="@+id/btnTextInputTest"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:text="@string/TextInputTest"
+                                    style="@style/Widget.TestApp.Button"/>
 
-                <Button
-                    android:id="@+id/btnSQLiteTest"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:text="@string/SQLiteTest"
-                    style="@style/Widget.TestApp.Button"/>
+                                <Button
+                                    android:id="@+id/btnVolleyTest"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:text="@string/VolleyTest"
+                                    style="@style/Widget.TestApp.Button"/>
 
-        </LinearLayout>
+                                <Button
+                                    android:id="@+id/btnVolleyPractice"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:text="@string/VolleyPractice"
+                                    style="@style/Widget.TestApp.Button"/>
+
+                                <Button
+                                    android:id="@+id/btnSQLiteTest"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:text="@string/SQLiteTest"
+                                    style="@style/Widget.TestApp.Button"/>
+
+                                <Button
+                                    android:id="@+id/btnDialogsTest"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:text="@string/DialogsTest"
+                                    style="@style/Widget.TestApp.Button"/>
+
+                                <Button
+                                    android:id="@+id/btnCustomDialogsTest"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:text="@string/CustomDialogTest"
+                                    style="@style/Widget.TestApp.Button"/>
+                        </LinearLayout>
+                </ScrollView>
+        </RelativeLayout>
 
         <android.support.design.widget.BottomNavigationView
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:id="@+id/bottomNavigationView"
+            android:layout_alignParentBottom="true"
             android:layout_gravity="bottom"
             app:menu="@menu/menu_bottom"
             style="@style/TextAppearance.TestApp.BottomNavigation"
             app:itemIconTint="@drawable/bottom_navigation_item_state"
             app:itemTextColor="@drawable/bottom_navigation_item_state"/>
 
-</LinearLayout>
+</RelativeLayout>

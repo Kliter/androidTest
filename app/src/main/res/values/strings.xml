@@ -26,4 +26,18 @@
     <string name="DELETE">DELETE</string>
     <string name="ImageLoader">ImageLoader</string>
     <string name="SQLiteTest">SQLite Test</string>
+    <string name="DialogsTest">Dialogs Test</string>
+    <string name="TitleMessageOK">Title Message OK</string>
+    <string name="TitleMessageOKCancel">Title Message OK Cancel</string>
+    <string name="TitleMessageYesLaterNoDialog">Title Message Yes Later No</string>
+    <string name="ThreeOptionsDialog">Three Options</string>
+    <string name="RadioButtonDialog">Radio Button</string>
+    <string name="CheckBoxDialog">Check Box Dialog</string>
+    <string name="CustomLayout">Custom Layout</string>
+    <string name="CustomDialogTest">CustomDialog Test</string>
+    <string name="LaunchCustomDialog">LaunchCustomDialog</string>
+    <string name="UserName">UserName</string>
+    <string name="Password">Password</string>
+    <string name="SignIn">SignIn</string>
+    <string name="Cancel">Cancel</string>
 </resources>

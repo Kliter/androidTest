@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import com.test.TestApp.CustomDialogTest.CustomDialogTestActivity
+import com.test.TestApp.DialogsTest.DialogsTestActivity
 import com.test.TestApp.ListViewTest.ListViewTestActivity
 import com.test.TestApp.PokeCardList.PokeCardListActivity
 import com.test.TestApp.PrefectureListView.PrefectureActivity
@@ -64,6 +66,14 @@ class MainActivity: AppCompatActivity() {
         }
         btnSQLiteTest.setOnClickListener {
             val intent = Intent(this, SQLiteTestActivity::class.java)
+            startActivity(intent)
+        }
+        btnDialogsTest.setOnClickListener {
+            val intent = Intent(this, DialogsTestActivity::class.java)
+            startActivity(intent)
+        }
+        btnCustomDialogsTest.setOnClickListener {
+            val intent = Intent(this, CustomDialogTestActivity::class.java)
             startActivity(intent)
         }
     }

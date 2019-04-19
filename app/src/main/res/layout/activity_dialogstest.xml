@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/linearLayout"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<Button
+		android:id="@+id/btnTitleMessageOKDialog"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:text="@string/TitleMessageOK"
+		style="Widget.TestApp.Button"/>
+
+	<Button
+		android:id="@+id/btnTitleMessageOKCancelDialog"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:text="@string/TitleMessageOKCancel"
+		style="Widget.TestApp.Button"/>
+
+	<Button
+		android:id="@+id/btnTitleMessageYesLaterNoDialog"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:text="@string/TitleMessageYesLaterNoDialog"
+		style="Widget.TestApp.Button"/>
+
+	<Button
+		android:id="@+id/btnThreeOptionsDialog"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:text="@string/ThreeOptionsDialog"
+		style="Widget.TestApp.Button"/>
+
+	<Button
+		android:id="@+id/btnRadioButtonDialog"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:text="@string/RadioButtonDialog"
+		style="@style/Widget.TestApp.Button"/>
+
+	<Button
+		android:id="@+id/btnCheckBoxDialog"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:text="@string/CheckBoxDialog"
+		style="@style/Widget.TestApp.Button"/>
+
+	<Button
+		android:id="@+id/btnCustomLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:text="@string/CustomLayout"
+		style="@style/Widget.TestApp.Button"/>
+
+</LinearLayout>
