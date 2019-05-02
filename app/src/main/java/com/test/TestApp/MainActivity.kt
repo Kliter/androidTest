@@ -8,6 +8,7 @@ import android.view.MenuItem
 import com.test.TestApp.CustomDialogTest.CustomDialogTestActivity
 import com.test.TestApp.DialogsTest.DialogsTestActivity
 import com.test.TestApp.ListViewTest.ListViewTestActivity
+import com.test.TestApp.MaterialSearchViewTest.MaterialSearchViewTestActivity
 import com.test.TestApp.PokeCardList.PokeCardListActivity
 import com.test.TestApp.PrefectureListView.PrefectureActivity
 import com.test.TestApp.RecyclerViewTest.RecyclerViewTestActivity
@@ -74,6 +75,10 @@ class MainActivity: AppCompatActivity() {
         }
         btnCustomDialogsTest.setOnClickListener {
             val intent = Intent(this, CustomDialogTestActivity::class.java)
+            startActivity(intent)
+        }
+        btnMaterialSearchViewTest.setOnClickListener {
+            val intent = Intent(this, MaterialSearchViewTestActivity::class.java)
             startActivity(intent)
         }
     }

@@ -40,4 +40,6 @@
     <string name="Password">Password</string>
     <string name="SignIn">SignIn</string>
     <string name="Cancel">Cancel</string>
+    <string name="MaterialViewTest">MaterialView Test</string>
+    <string name="SectionFormat">Hello World from section: %1$d</string>
 </resources>

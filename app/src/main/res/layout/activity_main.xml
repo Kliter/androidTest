@@ -28,90 +28,99 @@
                     android:layout_height="match_parent">
 
                         <LinearLayout
+                            android:id="@+id/linearLayout"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/linearLayout"
                             android:orientation="vertical">
 
                                 <Button
                                     android:id="@+id/btnListViewTest"
+                                    style="Widget.TestApp.Button"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="8dp"
-                                    android:text="@string/ListViewTest"
-                                    style="Widget.TestApp.Button"/>
+                                    android:text="@string/ListViewTest" />
 
                                 <Button
                                     android:id="@+id/btnPrefectureListView"
+                                    style="Widget.TestApp.Button"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="8dp"
-                                    android:text="@string/PrefectureListView"
-                                    style="Widget.TestApp.Button"/>
+                                    android:text="@string/PrefectureListView" />
 
                                 <Button
                                     android:id="@+id/btnRecyclerViewTest"
+                                    style="Widget.TestApp.Button"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="8dp"
-                                    android:text="@string/RecyclerViewTest"
-                                    style="Widget.TestApp.Button"/>
+                                    android:text="@string/RecyclerViewTest" />
 
                                 <Button
                                     android:id="@+id/btnPokeCardList"
+                                    style="Widget.TestApp.Button"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="8dp"
-                                    android:text="@string/PokeCardList"
-                                    style="Widget.TestApp.Button"/>
+                                    android:text="@string/PokeCardList" />
 
                                 <Button
                                     android:id="@+id/btnTextInputTest"
+                                    style="@style/Widget.TestApp.Button"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="8dp"
-                                    android:text="@string/TextInputTest"
-                                    style="@style/Widget.TestApp.Button"/>
+                                    android:text="@string/TextInputTest" />
 
                                 <Button
                                     android:id="@+id/btnVolleyTest"
+                                    style="@style/Widget.TestApp.Button"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="8dp"
-                                    android:text="@string/VolleyTest"
-                                    style="@style/Widget.TestApp.Button"/>
+                                    android:text="@string/VolleyTest" />
 
                                 <Button
                                     android:id="@+id/btnVolleyPractice"
+                                    style="@style/Widget.TestApp.Button"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="8dp"
-                                    android:text="@string/VolleyPractice"
-                                    style="@style/Widget.TestApp.Button"/>
+                                    android:text="@string/VolleyPractice" />
 
                                 <Button
                                     android:id="@+id/btnSQLiteTest"
+                                    style="@style/Widget.TestApp.Button"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="8dp"
-                                    android:text="@string/SQLiteTest"
-                                    style="@style/Widget.TestApp.Button"/>
+                                    android:text="@string/SQLiteTest" />
 
                                 <Button
                                     android:id="@+id/btnDialogsTest"
+                                    style="@style/Widget.TestApp.Button"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="8dp"
-                                    android:text="@string/DialogsTest"
-                                    style="@style/Widget.TestApp.Button"/>
+                                    android:text="@string/DialogsTest" />
 
                                 <Button
                                     android:id="@+id/btnCustomDialogsTest"
+                                    style="@style/Widget.TestApp.Button"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="8dp"
-                                    android:text="@string/CustomDialogTest"
-                                    style="@style/Widget.TestApp.Button"/>
+                                    android:text="@string/CustomDialogTest" />
+
+                                <Button
+                                    android:id="@+id/btnMaterialSearchViewTest"
+                                    style="@style/Widget.TestApp.Button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:text="@string/MaterialViewTest" />
+
                         </LinearLayout>
                 </ScrollView>
         </RelativeLayout>

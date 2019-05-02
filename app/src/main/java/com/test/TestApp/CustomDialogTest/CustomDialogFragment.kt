@@ -7,7 +7,7 @@ import android.support.v7.app.AlertDialog
 import android.view.LayoutInflater
 import com.test.TestApp.R
 
-class CustomDialogFragment(): DialogFragment() {
+class CustomDialogFragment: DialogFragment() {
 
     // TODO: Rename parameter arguments,
     //  choose names that match the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -15,7 +15,7 @@ class CustomDialogFragment(): DialogFragment() {
         private val ARG_PARAM1 = "param1"
         private val ARG_PARAM2 = "param2"
 
-        public fun newInstance(param1: String, param2: String): CustomDialogFragment {
+        fun newInstance(param1: String, param2: String): CustomDialogFragment {
             val fragment = CustomDialogFragment()
             val args = Bundle()
             args.putString(ARG_PARAM1, param1)
