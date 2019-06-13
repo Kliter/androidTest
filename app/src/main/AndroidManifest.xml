@@ -29,6 +29,7 @@
         <activity android:name=".DialogsTest.DialogsTestActivity"></activity>
         <activity android:name=".CustomDialogTest.CustomDialogTestActivity"></activity>
         <activity android:name=".MaterialSearchViewTest.MaterialSearchViewTestActivity"></activity>
+        <activity android:name=".GlideTest.GlideTestActivity"></activity>
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
     </application>
 </manifest>

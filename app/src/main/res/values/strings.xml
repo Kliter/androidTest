@@ -42,4 +42,6 @@
     <string name="Cancel">Cancel</string>
     <string name="MaterialViewTest">MaterialView Test</string>
     <string name="SectionFormat">Hello World from section: %1$d</string>
+    <string name="GlideTest">Glide Test</string>
+
 </resources>

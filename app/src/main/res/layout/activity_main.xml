@@ -66,6 +66,14 @@
                                     android:text="@string/PokeCardList" />
 
                                 <Button
+                                    android:id="@+id/btnMaterialSearchViewTest"
+                                    style="@style/Widget.TestApp.Button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:text="@string/MaterialViewTest" />
+
+                                <Button
                                     android:id="@+id/btnTextInputTest"
                                     style="@style/Widget.TestApp.Button"
                                     android:layout_width="match_parent"
@@ -114,12 +122,12 @@
                                     android:text="@string/CustomDialogTest" />
 
                                 <Button
-                                    android:id="@+id/btnMaterialSearchViewTest"
+                                    android:id="@+id/btnGlideTest"
                                     style="@style/Widget.TestApp.Button"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="8dp"
-                                    android:text="@string/MaterialViewTest" />
+                                    android:text="@string/GlideTest" />
 
                         </LinearLayout>
                 </ScrollView>

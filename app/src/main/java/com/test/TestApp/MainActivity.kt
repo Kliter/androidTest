@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import com.test.TestApp.CustomDialogTest.CustomDialogTestActivity
 import com.test.TestApp.DialogsTest.DialogsTestActivity
+import com.test.TestApp.GlideTest.GlideTestActivity
 import com.test.TestApp.ListViewTest.ListViewTestActivity
 import com.test.TestApp.MaterialSearchViewTest.MaterialSearchViewTestActivity
 import com.test.TestApp.PokeCardList.PokeCardListActivity
@@ -79,6 +80,10 @@ class MainActivity: AppCompatActivity() {
         }
         btnMaterialSearchViewTest.setOnClickListener {
             val intent = Intent(this, MaterialSearchViewTestActivity::class.java)
+            startActivity(intent)
+        }
+        btnGlideTest.setOnClickListener {
+            val intent = Intent(this, GlideTestActivity::class.java)
             startActivity(intent)
         }
     }

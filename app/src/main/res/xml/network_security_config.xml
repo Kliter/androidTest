@@ -4,6 +4,6 @@
         <domain includeSubdomains="true">google.com</domain>
     </domain-config>
     <domain-config cleartextTrafficPermitted="true">
-        <domain includeSubdomains="true">example.com</domain>
+        <domain includeSubdomains="true">naver.jp</domain>
     </domain-config>
 </network-security-config>
