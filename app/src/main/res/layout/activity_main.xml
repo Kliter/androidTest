@@ -129,6 +129,22 @@
                                     android:layout_margin="8dp"
                                     android:text="@string/GlideTest" />
 
+                                <Button
+                                    android:id="@+id/btnSetSoftInputModeTest"
+                                    style="@style/Widget.TestApp.Button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:text="@string/SetSoftInputModeTest" />
+
+                                <Button
+                                    android:id="@+id/btnPermissionCheckTest"
+                                    style="@style/Widget.TestApp.Button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:text="@string/PermissionCheckTest" />
+
                         </LinearLayout>
                 </ScrollView>
         </RelativeLayout>

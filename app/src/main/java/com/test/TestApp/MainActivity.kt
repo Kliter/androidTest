@@ -10,10 +10,12 @@ import com.test.TestApp.DialogsTest.DialogsTestActivity
 import com.test.TestApp.GlideTest.GlideTestActivity
 import com.test.TestApp.ListViewTest.ListViewTestActivity
 import com.test.TestApp.MaterialSearchViewTest.MaterialSearchViewTestActivity
+import com.test.TestApp.PermissionCheckTest.PermissionCheckTestActivity
 import com.test.TestApp.PokeCardList.PokeCardListActivity
 import com.test.TestApp.PrefectureListView.PrefectureActivity
 import com.test.TestApp.RecyclerViewTest.RecyclerViewTestActivity
 import com.test.TestApp.SQLiteTest.SQLiteTestActivity
+import com.test.TestApp.SetSoftInputModeTest.SetSoftInputModeTestActivity
 import com.test.TestApp.TextInputTest.TextInputTestActivity
 import com.test.TestApp.Util.BottomNavigationViewManager
 import com.test.TestApp.Util.ToolbarManager
@@ -84,6 +86,14 @@ class MainActivity: AppCompatActivity() {
         }
         btnGlideTest.setOnClickListener {
             val intent = Intent(this, GlideTestActivity::class.java)
+            startActivity(intent)
+        }
+        btnSetSoftInputModeTest.setOnClickListener {
+            val intent = Intent(this, SetSoftInputModeTestActivity::class.java)
+            startActivity(intent)
+        }
+        btnPermissionCheckTest.setOnClickListener {
+            val intent = Intent(this, PermissionCheckTestActivity::class.java)
             startActivity(intent)
         }
     }

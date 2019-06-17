@@ -6,7 +6,6 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.test.TestApp.R
 import kotlinx.android.synthetic.main.activity_glidetest.*
-import java.net.URI
 
 class GlideTestActivity: AppCompatActivity() {
 

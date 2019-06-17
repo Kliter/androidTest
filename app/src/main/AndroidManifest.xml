@@ -30,6 +30,8 @@
         <activity android:name=".CustomDialogTest.CustomDialogTestActivity"></activity>
         <activity android:name=".MaterialSearchViewTest.MaterialSearchViewTestActivity"></activity>
         <activity android:name=".GlideTest.GlideTestActivity"></activity>
+        <activity android:name=".SetSoftInputModeTest.SetSoftInputModeTestActivity"></activity>
+        <activity android:name=".PermissionCheckTest.PermissionCheckTestActivity"></activity>
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
     </application>
 </manifest>

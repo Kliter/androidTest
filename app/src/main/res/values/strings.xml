@@ -43,5 +43,8 @@
     <string name="MaterialViewTest">MaterialView Test</string>
     <string name="SectionFormat">Hello World from section: %1$d</string>
     <string name="GlideTest">Glide Test</string>
+	<string name="SetSoftInputModeTest">SetSoftInputMode Test</string>
+	<string name="PermissionCheckTest">PermissionCheck Test</string>
+	<string name="GetStorage">GetStorage</string>
 
 </resources>
