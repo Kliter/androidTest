@@ -2,8 +2,8 @@ package com.test.TestApp.PokeCardList
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -38,7 +38,7 @@ class PokeCardListActivity: AppCompatActivity(), PokeCardListViewHolder.ItemClic
         val pokeDescriptionArray = resources.getStringArray(R.array.pokeDescription).toMutableList()
 
         pokeCardRecyclerView.adapter = PokeCardListAdapter(this, this, pokeImageArray, pokeNameArray, pokeDescriptionArray)
-        pokeCardRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        pokeCardRecyclerView.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this, androidx.recyclerview.widget.LinearLayoutManager.VERTICAL, false)
     }
 
     override fun onOptionsItemSelected(menuItem: MenuItem?): Boolean {

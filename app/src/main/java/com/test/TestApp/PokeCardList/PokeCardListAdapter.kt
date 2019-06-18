@@ -2,7 +2,7 @@ package com.test.TestApp.PokeCardList
 
 import android.content.Context
 import android.graphics.BitmapFactory
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.test.TestApp.R
@@ -13,15 +13,15 @@ class PokeCardListAdapter(
         private val pokeImageList: List<Int>,
         private val pokeNameList: List<String>,
         private val pokeDescription: List<String>
-): RecyclerView.Adapter<PokeCardListViewHolder>() {
+): androidx.recyclerview.widget.RecyclerView.Adapter<PokeCardListViewHolder>() {
 
-    var mRecyclerView: RecyclerView? = null
+    var mRecyclerView: androidx.recyclerview.widget.RecyclerView? = null
 
-    override fun onAttachedToRecyclerView(recyclerView: RecyclerView) {
+    override fun onAttachedToRecyclerView(recyclerView: androidx.recyclerview.widget.RecyclerView) {
         mRecyclerView = recyclerView
     }
 
-    override fun onDetachedFromRecyclerView(recyclerView: RecyclerView) {
+    override fun onDetachedFromRecyclerView(recyclerView: androidx.recyclerview.widget.RecyclerView) {
         mRecyclerView = null
     }
 

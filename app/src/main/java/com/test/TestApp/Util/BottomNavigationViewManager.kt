@@ -1,8 +1,8 @@
 package com.test.TestApp.Util
 
 import android.content.Intent
-import android.support.design.widget.BottomNavigationView
-import android.support.v7.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.appcompat.app.AppCompatActivity
 import com.test.TestApp.MainActivity
 import com.test.TestApp.R
 

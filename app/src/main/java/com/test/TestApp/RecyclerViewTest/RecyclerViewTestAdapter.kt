@@ -1,7 +1,7 @@
 package com.test.TestApp.RecyclerViewTest
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.test.TestApp.R
@@ -10,16 +10,16 @@ class RecyclerViewTestAdapter(
         private val context: Context,
         private val itemClickListener: RecyclerViewTestViewHolder.ItemClickListener,
         private val itemList: List<String>
-) : RecyclerView.Adapter<RecyclerViewTestViewHolder>() {
+) : androidx.recyclerview.widget.RecyclerView.Adapter<RecyclerViewTestViewHolder>() {
 
-    private var mRecyclerView: RecyclerView? = null
+    private var mRecyclerView: androidx.recyclerview.widget.RecyclerView? = null
 
-    override fun onAttachedToRecyclerView(recyclerView: RecyclerView) {
+    override fun onAttachedToRecyclerView(recyclerView: androidx.recyclerview.widget.RecyclerView) {
         super.onAttachedToRecyclerView(recyclerView)
         mRecyclerView = recyclerView
     }
 
-    override fun onDetachedFromRecyclerView(recyclerView: RecyclerView) {
+    override fun onDetachedFromRecyclerView(recyclerView: androidx.recyclerview.widget.RecyclerView) {
         super.onDetachedFromRecyclerView(recyclerView)
         mRecyclerView = null
     }

@@ -1,8 +1,8 @@
 package com.test.TestApp.CustomDialogTest
 
 import android.os.Bundle
-import android.support.v4.app.DialogFragment
-import android.support.v7.app.AppCompatActivity
+import androidx.fragment.app.DialogFragment
+import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import com.test.TestApp.R
 

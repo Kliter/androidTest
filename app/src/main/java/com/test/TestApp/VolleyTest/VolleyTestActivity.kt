@@ -1,7 +1,7 @@
 package com.test.TestApp.VolleyTest
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import com.test.TestApp.R
