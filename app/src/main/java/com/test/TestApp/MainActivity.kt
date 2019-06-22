@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import com.test.TestApp.CustomDialogTest.CustomDialogTestActivity
 import com.test.TestApp.DialogsTest.DialogsTestActivity
+import com.test.TestApp.FirebaseTest.FirebaseTestActivity
 import com.test.TestApp.GlideTest.GlideTestActivity
 import com.test.TestApp.ListViewTest.ListViewTestActivity
 import com.test.TestApp.MaterialSearchViewTest.MaterialSearchViewTestActivity
@@ -94,6 +95,10 @@ class MainActivity: AppCompatActivity() {
         }
         btnPermissionCheckTest.setOnClickListener {
             val intent = Intent(this, PermissionCheckTestActivity::class.java)
+            startActivity(intent)
+        }
+        btnFirebaseTest.setOnClickListener {
+            val intent = Intent(this, FirebaseTestActivity::class.java)
             startActivity(intent)
         }
     }

@@ -46,5 +46,8 @@
 	<string name="SetSoftInputModeTest">SetSoftInputMode Test</string>
 	<string name="PermissionCheckTest">PermissionCheck Test</string>
 	<string name="GetStorage">GetStorage</string>
-
+	<string name="FirebaseTest">Firebase Test</string>
+	<string name="LoginTest">Login Test</string>
+	<string name="Email">Email</string>
+    <string name="Register">Register</string>
 </resources>

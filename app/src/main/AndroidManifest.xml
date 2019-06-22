@@ -32,6 +32,9 @@
         <activity android:name=".GlideTest.GlideTestActivity"></activity>
         <activity android:name=".SetSoftInputModeTest.SetSoftInputModeTestActivity"></activity>
         <activity android:name=".PermissionCheckTest.PermissionCheckTestActivity"></activity>
+        <activity android:name=".FirebaseTest.FirebaseTestActivity"></activity>
+        <activity android:name=".FirebaseTest.LoginTestActivity"></activity>
+
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
     </application>
 </manifest>
