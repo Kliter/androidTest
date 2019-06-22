@@ -9,6 +9,7 @@ import com.test.TestApp.CustomDialogTest.CustomDialogTestActivity
 import com.test.TestApp.DialogsTest.DialogsTestActivity
 import com.test.TestApp.FirebaseTest.FirebaseTestActivity
 import com.test.TestApp.GlideTest.GlideTestActivity
+import com.test.TestApp.GoogleMapTest.GoogleMapTestActivity
 import com.test.TestApp.ListViewTest.ListViewTestActivity
 import com.test.TestApp.MaterialSearchViewTest.MaterialSearchViewTestActivity
 import com.test.TestApp.PermissionCheckTest.PermissionCheckTestActivity
@@ -41,22 +42,18 @@ class MainActivity: AppCompatActivity() {
             val intent = Intent(this, ListViewTestActivity::class.java)
             startActivity(intent)
         }
-
         btnPrefectureListView.setOnClickListener {
             val intent = Intent(this, PrefectureActivity::class.java)
             startActivity(intent)
         }
-
         btnRecyclerViewTest.setOnClickListener {
             val intent = Intent(this, RecyclerViewTestActivity::class.java)
             startActivity(intent)
         }
-
         btnPokeCardList.setOnClickListener {
             val intent = Intent(this, PokeCardListActivity::class.java)
             startActivity(intent)
         }
-
         btnTextInputTest.setOnClickListener {
             val intent =  Intent(this, TextInputTestActivity::class.java)
             startActivity(intent)
@@ -99,6 +96,10 @@ class MainActivity: AppCompatActivity() {
         }
         btnFirebaseTest.setOnClickListener {
             val intent = Intent(this, FirebaseTestActivity::class.java)
+            startActivity(intent)
+        }
+        btnGoogleMapTest.setOnClickListener {
+            val intent = Intent(this, GoogleMapTestActivity::class.java)
             startActivity(intent)
         }
     }
