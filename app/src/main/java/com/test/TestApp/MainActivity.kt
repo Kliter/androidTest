@@ -13,6 +13,7 @@ import com.test.TestApp.GoogleMapTest.GoogleMapTestActivity
 import com.test.TestApp.ListViewTest.ListViewTestActivity
 import com.test.TestApp.MaterialSearchViewTest.MaterialSearchViewTestActivity
 import com.test.TestApp.NavigationDrawerTest.NavigationDrawerTestActivity
+import com.test.TestApp.OKHTTPTest.OkHttpTestActivity
 import com.test.TestApp.PermissionCheckTest.PermissionCheckTestActivity
 import com.test.TestApp.PokeCardList.PokeCardListActivity
 import com.test.TestApp.PrefectureListView.PrefectureActivity
@@ -105,6 +106,10 @@ class MainActivity: AppCompatActivity() {
         }
         btnNavigationDrawerTest.setOnClickListener {
             val intent = Intent(this, NavigationDrawerTestActivity::class.java)
+            startActivity(intent)
+        }
+        btnOkHttpTest.setOnClickListener {
+            val intent = Intent(this, OkHttpTestActivity::class.java)
             startActivity(intent)
         }
     }

@@ -56,4 +56,5 @@
     <string name="ActionCamera">Camera</string>
     <string name="ActionShare">Share</string>
     <string name="ActionSend">Send</string>
+    <string name="OkHttpTest">OkHttp Test</string>
 </resources>

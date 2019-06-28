@@ -169,6 +169,14 @@
                                     android:layout_margin="8dp"
                                     android:text="@string/NavigationDrawerTest" />
 
+                                <Button
+                                    android:id="@+id/btnOkHttpTest"
+                                    style="@style/Widget.TestApp.Button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:text="@string/OkHttpTest" />
+
                         </LinearLayout>
                 </ScrollView>
         </RelativeLayout>
