@@ -58,4 +58,5 @@
 	<string name="ActionSend">Send</string>
 	<string name="OkHttpTest">OkHttp Test</string>
 	<string name="Dagger2Test">Dagger2 Test</string>
+	<string name="KoinTest">Koin Test</string>
 </resources>

@@ -185,6 +185,14 @@
                                     android:layout_margin="8dp"
                                     android:text="@string/Dagger2Test" />
 
+                                <Button
+                                    android:id="@+id/btnKoinTest"
+                                    style="@style/Widget.TestApp.Button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:text="@string/KoinTest" />
+
                         </LinearLayout>
                 </ScrollView>
         </RelativeLayout>

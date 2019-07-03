@@ -44,6 +44,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:17.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta2'
     implementation 'com.squareup.okhttp3:okhttp:4.0.0'
+    implementation 'org.koin:koin-android:1.0.2'
 
     // Dagger2
     def dagger_version = "2.23.2"
