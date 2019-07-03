@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import com.test.TestApp.CustomDialogTest.CustomDialogTestActivity
+import com.test.TestApp.Dagger2Test.Dagger2TestActivity
 import com.test.TestApp.DialogsTest.DialogsTestActivity
 import com.test.TestApp.FirebaseTest.FirebaseTestActivity
 import com.test.TestApp.GlideTest.GlideTestActivity
@@ -110,6 +111,10 @@ class MainActivity: AppCompatActivity() {
         }
         btnOkHttpTest.setOnClickListener {
             val intent = Intent(this, OkHttpTestActivity::class.java)
+            startActivity(intent)
+        }
+        btnDagger2Test.setOnClickListener {
+            val intent = Intent(this, Dagger2TestActivity::class.java)
             startActivity(intent)
         }
     }
