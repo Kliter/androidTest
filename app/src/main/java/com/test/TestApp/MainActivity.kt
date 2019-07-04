@@ -5,13 +5,13 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import com.test.TestApp.CustomDialogTest.CustomDialogTestActivity
 import com.test.TestApp.Dagger2Test.Dagger2TestActivity
 import com.test.TestApp.DialogsTest.DialogsTestActivity
 import com.test.TestApp.FirebaseTest.FirebaseTestActivity
 import com.test.TestApp.GlideTest.GlideTestActivity
 import com.test.TestApp.GoogleMapTest.GoogleMapTestActivity
-import com.test.TestApp.KoinTest.KoinTestActivity
 import com.test.TestApp.ListViewTest.ListViewTestActivity
 import com.test.TestApp.MaterialSearchViewTest.MaterialSearchViewTestActivity
 import com.test.TestApp.NavigationDrawerTest.NavigationDrawerTestActivity
@@ -30,7 +30,8 @@ import com.test.TestApp.VolleyTest.VolleyTestActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 
-class MainActivity: AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,86 +43,93 @@ class MainActivity: AppCompatActivity() {
     }
 
     private fun setupWidget() {
-        btnListViewTest.setOnClickListener {
-            val intent = Intent(this, ListViewTestActivity::class.java)
-            startActivity(intent)
+        btnListViewTest.setOnClickListener(this)
+        btnPrefectureListView.setOnClickListener(this)
+        btnRecyclerViewTest.setOnClickListener(this)
+        btnPokeCardList.setOnClickListener(this)
+        btnTextInputTest.setOnClickListener(this)
+        btnVolleyTest.setOnClickListener(this)
+        btnVolleyPractice.setOnClickListener(this)
+        btnSQLiteTest.setOnClickListener(this)
+        btnDialogsTest.setOnClickListener(this)
+        btnCustomDialogsTest.setOnClickListener(this)
+        btnMaterialSearchViewTest.setOnClickListener(this)
+        btnGlideTest.setOnClickListener(this)
+        btnSetSoftInputModeTest.setOnClickListener(this)
+        btnPermissionCheckTest.setOnClickListener(this)
+        btnFirebaseTest.setOnClickListener(this)
+        btnGoogleMapTest.setOnClickListener(this)
+        btnNavigationDrawerTest.setOnClickListener(this)
+        btnOkHttpTest.setOnClickListener(this)
+        btnDagger2Test.setOnClickListener(this)
+        btnKoinTest.setOnClickListener(this)
+    }
+
+    override fun onClick(view: View) {
+        val intent = Intent()
+        when (view.id) {
+            R.id.btnListViewTest -> {
+                intent.setClass(this, ListViewTestActivity::class.java)
+            }
+            R.id.btnPrefectureListView -> {
+                intent.setClass(this, PrefectureActivity::class.java)
+            }
+            R.id.btnRecyclerViewTest -> {
+                intent.setClass(this, RecyclerViewTestActivity::class.java)
+            }
+            R.id.btnPokeCardList -> {
+                intent.setClass(this, PokeCardListActivity::class.java)
+            }
+            R.id.btnTextInputTest -> {
+                intent.setClass(this, TextInputTestActivity::class.java)
+            }
+            R.id.btnVolleyTest -> {
+                intent.setClass(this, VolleyTestActivity::class.java)
+            }
+            R.id.btnVolleyPractice -> {
+                intent.setClass(this, VolleyPracticeActivity::class.java)
+            }
+            R.id.btnSQLiteTest -> {
+                intent.setClass(this, SQLiteTestActivity::class.java)
+            }
+            R.id.btnDialogsTest -> {
+                intent.setClass(this, DialogsTestActivity::class.java)
+            }
+            R.id.btnCustomDialogsTest -> {
+                intent.setClass(this, CustomDialogTestActivity::class.java)
+            }
+            R.id.btnMaterialSearchViewTest -> {
+                intent.setClass(this, MaterialSearchViewTestActivity::class.java)
+            }
+            R.id.btnGlideTest -> {
+                intent.setClass(this, GlideTestActivity::class.java)
+            }
+            R.id.btnSetSoftInputModeTest -> {
+                intent.setClass(this, SetSoftInputModeTestActivity::class.java)
+            }
+            R.id.btnPermissionCheckTest -> {
+                intent.setClass(this, PermissionCheckTestActivity::class.java)
+            }
+            R.id.btnFirebaseTest -> {
+                intent.setClass(this, FirebaseTestActivity::class.java)
+            }
+            R.id.btnGoogleMapTest -> {
+                intent.setClass(this, GoogleMapTestActivity::class.java)
+            }
+            R.id.btnNavigationDrawerTest -> {
+                intent.setClass(this, NavigationDrawerTestActivity::class.java)
+            }
+            R.id.btnOkHttpTest -> {
+                intent.setClass(this, OkHttpTestActivity::class.java)
+            }
+            R.id.btnDagger2Test -> {
+                intent.setClass(this, Dagger2TestActivity::class.java)
+            }
+            R.id.btnKoinTest -> {
+                intent.setClass(this, Dagger2TestActivity::class.java)
+            }
         }
-        btnPrefectureListView.setOnClickListener {
-            val intent = Intent(this, PrefectureActivity::class.java)
-            startActivity(intent)
-        }
-        btnRecyclerViewTest.setOnClickListener {
-            val intent = Intent(this, RecyclerViewTestActivity::class.java)
-            startActivity(intent)
-        }
-        btnPokeCardList.setOnClickListener {
-            val intent = Intent(this, PokeCardListActivity::class.java)
-            startActivity(intent)
-        }
-        btnTextInputTest.setOnClickListener {
-            val intent =  Intent(this, TextInputTestActivity::class.java)
-            startActivity(intent)
-        }
-        btnVolleyTest.setOnClickListener {
-            val intent = Intent(this, VolleyTestActivity::class.java)
-            startActivity(intent)
-        }
-        btnVolleyPractice.setOnClickListener {
-            val intent = Intent(this, VolleyPracticeActivity::class.java)
-            startActivity(intent)
-        }
-        btnSQLiteTest.setOnClickListener {
-            val intent = Intent(this, SQLiteTestActivity::class.java)
-            startActivity(intent)
-        }
-        btnDialogsTest.setOnClickListener {
-            val intent = Intent(this, DialogsTestActivity::class.java)
-            startActivity(intent)
-        }
-        btnCustomDialogsTest.setOnClickListener {
-            val intent = Intent(this, CustomDialogTestActivity::class.java)
-            startActivity(intent)
-        }
-        btnMaterialSearchViewTest.setOnClickListener {
-            val intent = Intent(this, MaterialSearchViewTestActivity::class.java)
-            startActivity(intent)
-        }
-        btnGlideTest.setOnClickListener {
-            val intent = Intent(this, GlideTestActivity::class.java)
-            startActivity(intent)
-        }
-        btnSetSoftInputModeTest.setOnClickListener {
-            val intent = Intent(this, SetSoftInputModeTestActivity::class.java)
-            startActivity(intent)
-        }
-        btnPermissionCheckTest.setOnClickListener {
-            val intent = Intent(this, PermissionCheckTestActivity::class.java)
-            startActivity(intent)
-        }
-        btnFirebaseTest.setOnClickListener {
-            val intent = Intent(this, FirebaseTestActivity::class.java)
-            startActivity(intent)
-        }
-        btnGoogleMapTest.setOnClickListener {
-            val intent = Intent(this, GoogleMapTestActivity::class.java)
-            startActivity(intent)
-        }
-        btnNavigationDrawerTest.setOnClickListener {
-            val intent = Intent(this, NavigationDrawerTestActivity::class.java)
-            startActivity(intent)
-        }
-        btnOkHttpTest.setOnClickListener {
-            val intent = Intent(this, OkHttpTestActivity::class.java)
-            startActivity(intent)
-        }
-        btnDagger2Test.setOnClickListener {
-            val intent = Intent(this, Dagger2TestActivity::class.java)
-            startActivity(intent)
-        }
-        btnKoinTest.setOnClickListener {
-            val intent = Intent(this, KoinTestActivity::class.java)
-            startActivity(intent)
-        }
+        startActivity(intent)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
