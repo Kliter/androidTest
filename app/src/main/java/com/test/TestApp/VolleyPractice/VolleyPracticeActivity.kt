@@ -1,12 +1,12 @@
-package com.test.TestApp.VolleyPractice
+package com.test.testapp.volleypractice
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
-import com.test.TestApp.R
-import com.test.TestApp.Util.ToolbarManager
+import com.test.testapp.R
+import com.test.testapp.util.ToolbarManager
 import kotlinx.android.synthetic.main.activity_volleypractice.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 

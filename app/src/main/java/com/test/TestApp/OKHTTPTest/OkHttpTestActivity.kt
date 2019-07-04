@@ -1,8 +1,8 @@
-package com.test.TestApp.OKHTTPTest
+package com.test.testapp.okhttptest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.test.TestApp.R
+import com.test.testapp.R
 import kotlinx.android.synthetic.main.activity_ok_http_test.*
 import okhttp3.*
 import java.io.IOException

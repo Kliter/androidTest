@@ -1,4 +1,4 @@
-package com.test.TestApp.KoinTest
+package com.test.testapp.kointest
 
 interface MainViewModelContract {
     fun greet(): String

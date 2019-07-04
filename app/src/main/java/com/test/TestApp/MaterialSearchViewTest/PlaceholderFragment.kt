@@ -1,11 +1,11 @@
-package com.test.TestApp.MaterialSearchViewTest
+package com.test.testapp.materialsearchviewtest
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.test.TestApp.R
+import com.test.testapp.R
 import kotlinx.android.synthetic.main.fragment_tab.view.*
 
 class PlaceholderFragment: Fragment() {

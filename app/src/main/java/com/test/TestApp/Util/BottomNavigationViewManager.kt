@@ -1,10 +1,10 @@
-package com.test.TestApp.Util
+package com.test.testapp.util
 
 import android.content.Intent
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import com.test.TestApp.MainActivity
-import com.test.TestApp.R
+import com.test.testapp.MainActivity
+import com.test.testapp.R
 
 class BottomNavigationViewManager {
 

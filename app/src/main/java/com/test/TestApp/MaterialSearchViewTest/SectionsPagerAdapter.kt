@@ -1,4 +1,4 @@
-package com.test.TestApp.MaterialSearchViewTest
+package com.test.testapp.materialsearchviewtest
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

@@ -1,10 +1,10 @@
-package com.test.TestApp.CustomDialogTest
+package com.test.testapp.customdialogtest
 
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.view.View
-import com.test.TestApp.R
+import com.test.testapp.R
 
 class CustomDialogTestActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

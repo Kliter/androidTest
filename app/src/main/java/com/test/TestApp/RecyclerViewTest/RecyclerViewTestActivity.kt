@@ -1,17 +1,14 @@
-package com.test.TestApp.RecyclerViewTest
+package com.test.testapp.recyclerviewtest
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
-import com.test.TestApp.MainActivity
-import com.test.TestApp.R
-import com.test.TestApp.Util.BottomNavigationViewManager
-import com.test.TestApp.Util.ToolbarManager
+import com.test.testapp.R
+import com.test.testapp.util.BottomNavigationViewManager
+import com.test.testapp.util.ToolbarManager
 import kotlinx.android.synthetic.main.activity_recyclerviewtest.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 

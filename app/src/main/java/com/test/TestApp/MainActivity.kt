@@ -1,4 +1,4 @@
-package com.test.TestApp
+package com.test.testapp
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,27 +6,28 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import com.test.TestApp.CustomDialogTest.CustomDialogTestActivity
-import com.test.TestApp.Dagger2Test.Dagger2TestActivity
-import com.test.TestApp.DialogsTest.DialogsTestActivity
-import com.test.TestApp.FirebaseTest.FirebaseTestActivity
-import com.test.TestApp.GlideTest.GlideTestActivity
-import com.test.TestApp.GoogleMapTest.GoogleMapTestActivity
-import com.test.TestApp.ListViewTest.ListViewTestActivity
-import com.test.TestApp.MaterialSearchViewTest.MaterialSearchViewTestActivity
-import com.test.TestApp.NavigationDrawerTest.NavigationDrawerTestActivity
-import com.test.TestApp.OKHTTPTest.OkHttpTestActivity
-import com.test.TestApp.PermissionCheckTest.PermissionCheckTestActivity
-import com.test.TestApp.PokeCardList.PokeCardListActivity
-import com.test.TestApp.PrefectureListView.PrefectureActivity
-import com.test.TestApp.RecyclerViewTest.RecyclerViewTestActivity
-import com.test.TestApp.SQLiteTest.SQLiteTestActivity
-import com.test.TestApp.SetSoftInputModeTest.SetSoftInputModeTestActivity
-import com.test.TestApp.TextInputTest.TextInputTestActivity
-import com.test.TestApp.Util.BottomNavigationViewManager
-import com.test.TestApp.Util.ToolbarManager
-import com.test.TestApp.VolleyPractice.VolleyPracticeActivity
-import com.test.TestApp.VolleyTest.VolleyTestActivity
+import com.test.testapp.customdialogtest.CustomDialogTestActivity
+import com.test.testapp.dagger2test.Dagger2TestActivity
+import com.test.testapp.databindingtest.DataBindingTestActivity
+import com.test.testapp.dialogstest.DialogsTestActivity
+import com.test.testapp.firebasetest.FirebaseTestActivity
+import com.test.testapp.glidetest.GlideTestActivity
+import com.test.testapp.googlemaptest.GoogleMapTestActivity
+import com.test.testapp.listviewtest.ListViewTestActivity
+import com.test.testapp.materialsearchviewtest.MaterialSearchViewTestActivity
+import com.test.testapp.navigationdrawertest.NavigationDrawerTestActivity
+import com.test.testapp.okhttptest.OkHttpTestActivity
+import com.test.testapp.permissionchecktest.PermissionCheckTestActivity
+import com.test.testapp.pokecardlist.PokeCardListActivity
+import com.test.testapp.prefecturelistview.PrefectureActivity
+import com.test.testapp.recyclerviewtest.RecyclerViewTestActivity
+import com.test.testapp.sqlitetest.SQLiteTestActivity
+import com.test.testapp.setsoftinputmodetest.SetSoftInputModeTestActivity
+import com.test.testapp.textinputtest.TextInputTestActivity
+import com.test.testapp.util.BottomNavigationViewManager
+import com.test.testapp.util.ToolbarManager
+import com.test.testapp.volleypractice.VolleyPracticeActivity
+import com.test.testapp.volleytest.VolleyTestActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 
@@ -63,6 +64,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnOkHttpTest.setOnClickListener(this)
         btnDagger2Test.setOnClickListener(this)
         btnKoinTest.setOnClickListener(this)
+        btnDataBindingTest.setOnClickListener(this)
     }
 
     override fun onClick(view: View) {
@@ -127,6 +129,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.btnKoinTest -> {
                 intent.setClass(this, Dagger2TestActivity::class.java)
+            }
+            R.id.btnDataBindingTest -> {
+                intent.setClass(this, DataBindingTestActivity::class.java)
             }
         }
         startActivity(intent)

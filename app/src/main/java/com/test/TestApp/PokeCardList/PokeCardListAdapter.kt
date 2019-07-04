@@ -1,11 +1,10 @@
-package com.test.TestApp.PokeCardList
+package com.test.testapp.pokecardlist
 
 import android.content.Context
 import android.graphics.BitmapFactory
-import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.test.TestApp.R
+import com.test.testapp.R
 
 class PokeCardListAdapter(
         private val context: Context,

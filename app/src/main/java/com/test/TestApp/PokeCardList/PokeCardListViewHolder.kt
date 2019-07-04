@@ -1,6 +1,5 @@
-package com.test.TestApp.PokeCardList
+package com.test.testapp.pokecardlist
 
-import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import kotlinx.android.synthetic.main.snippet_pokecardlist_item.view.*
 

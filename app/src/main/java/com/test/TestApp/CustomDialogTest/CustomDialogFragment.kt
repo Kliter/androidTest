@@ -1,11 +1,11 @@
-package com.test.TestApp.CustomDialogTest
+package com.test.testapp.customdialogtest
 
 import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
 import androidx.appcompat.app.AlertDialog
 import android.view.LayoutInflater
-import com.test.TestApp.R
+import com.test.testapp.R
 
 class CustomDialogFragment: DialogFragment() {
 

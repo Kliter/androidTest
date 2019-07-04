@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.test.TestApp">
+	package="com.test.testapp">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-	    android:name=".KoinTest.Application"
+	    android:name=".kointest.Application"
 	    android:allowBackup="true"
 	    android:icon="@mipmap/ic_launcher"
 	    android:label="@string/app_name"
@@ -19,10 +19,11 @@
 	    android:roundIcon="@mipmap/ic_launcher_round"
 	    android:supportsRtl="true"
 	    android:theme="@style/Theme.AppTheme">
-	    <activity android:name=".KoinTest.KoinTestActivity"></activity>
-	    <activity android:name=".Dagger2Test.Dagger2TestActivity" />
-	    <activity android:name=".OKHTTPTest.OkHttpTestActivity" />
-	    <activity android:name=".NavigationDrawerTest.NavigationDrawerTestActivity" />
+	    <activity android:name=".databindingtest.DataBindingTestActivity"></activity>
+	    <activity android:name=".kointest.KoinTestActivity"></activity>
+	    <activity android:name=".dagger2test.Dagger2TestActivity" />
+	    <activity android:name=".okhttptest.OkHttpTestActivity" />
+	    <activity android:name=".navigationdrawertest.NavigationDrawerTestActivity" />
 	    <!--
 			 The API key for Google Maps-based APIs is defined as a string resource.
 			 (See the file "res/values/google_maps_api.xml").
@@ -36,7 +37,7 @@
 		    android:value="@string/google_maps_key" />
 
 	    <activity
-		    android:name=".GoogleMapTest.GoogleMapTestActivity"
+		    android:name=".googlemaptest.GoogleMapTestActivity"
 		    android:label="@string/title_activity_google_map_test" />
 	    <activity android:name=".MainActivity">
 		    <intent-filter>
@@ -45,22 +46,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 	    </activity>
-	    <activity android:name=".ListViewTest.ListViewTestActivity" />
-	    <activity android:name=".PrefectureListView.PrefectureActivity" />
-	    <activity android:name=".RecyclerViewTest.RecyclerViewTestActivity" />
-	    <activity android:name=".PokeCardList.PokeCardListActivity" />
-	    <activity android:name=".TextInputTest.TextInputTestActivity" />
-	    <activity android:name=".VolleyTest.VolleyTestActivity" />
-	    <activity android:name=".VolleyPractice.VolleyPracticeActivity" />
-	    <activity android:name=".SQLiteTest.SQLiteTestActivity" />
-	    <activity android:name=".DialogsTest.DialogsTestActivity" />
-	    <activity android:name=".CustomDialogTest.CustomDialogTestActivity" />
-	    <activity android:name=".MaterialSearchViewTest.MaterialSearchViewTestActivity" />
-	    <activity android:name=".GlideTest.GlideTestActivity" />
-	    <activity android:name=".SetSoftInputModeTest.SetSoftInputModeTestActivity" />
-	    <activity android:name=".PermissionCheckTest.PermissionCheckTestActivity" />
-	    <activity android:name=".FirebaseTest.FirebaseTestActivity" />
-	    <activity android:name=".FirebaseTest.LoginTestActivity" />
+	    <activity android:name=".listviewtest.ListViewTestActivity" />
+	    <activity android:name=".prefecturelistview.PrefectureActivity" />
+	    <activity android:name=".recyclerviewtest.RecyclerViewTestActivity" />
+	    <activity android:name=".pokecardlist.PokeCardListActivity" />
+	    <activity android:name=".textinputtest.TextInputTestActivity" />
+	    <activity android:name=".volleytest.VolleyTestActivity" />
+	    <activity android:name=".volleypractice.VolleyPracticeActivity" />
+	    <activity android:name=".sqlitetest.SQLiteTestActivity" />
+	    <activity android:name=".dialogstest.DialogsTestActivity" />
+	    <activity android:name=".customdialogtest.CustomDialogTestActivity" />
+	    <activity android:name=".materialsearchviewtest.MaterialSearchViewTestActivity" />
+	    <activity android:name=".glidetest.GlideTestActivity" />
+	    <activity android:name=".setsoftinputmodetest.SetSoftInputModeTestActivity" />
+	    <activity android:name=".permissionchecktest.PermissionCheckTestActivity" />
+	    <activity android:name=".firebasetest.FirebaseTestActivity" />
+	    <activity android:name=".firebasetest.LoginTestActivity" />
 
 	    <uses-library
 		    android:name="org.apache.http.legacy"

@@ -1,9 +1,9 @@
-package com.test.TestApp.KoinTest
+package com.test.testapp.kointest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.test.TestApp.R
+import com.test.testapp.R
 import org.koin.android.ext.android.inject
 
 class KoinTestActivity : AppCompatActivity() {

@@ -1,6 +1,4 @@
-package com.test.TestApp.VolleyPractice
-
-import com.android.volley.toolbox.StringRequest
+package com.test.testapp.volleypractice
 
 interface IVolley {
     fun onResponse(response: String)

@@ -1,4 +1,4 @@
-package com.test.TestApp.VolleyPractice
+package com.test.testapp.volleypractice
 
 import android.content.Context
 import android.graphics.Bitmap

@@ -1,4 +1,4 @@
-package com.test.TestApp.PrefectureListView
+package com.test.testapp.prefecturelistview
 
 data class PrefectureListItemData(
         val prefectureIcon: Int,

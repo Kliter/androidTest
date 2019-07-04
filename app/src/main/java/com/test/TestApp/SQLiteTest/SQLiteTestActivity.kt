@@ -1,4 +1,4 @@
-package com.test.TestApp.SQLiteTest
+package com.test.testapp.sqlitetest
 
 import android.content.ContentValues
 import android.database.Cursor
@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.TextView
-import com.test.TestApp.R
+import com.test.testapp.R
 import kotlinx.android.synthetic.main.activity_sqlitetest.*
 import java.lang.StringBuilder
 

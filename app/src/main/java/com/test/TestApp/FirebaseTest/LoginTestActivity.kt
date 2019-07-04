@@ -1,4 +1,4 @@
-package com.test.TestApp.FirebaseTest
+package com.test.testapp.firebasetest
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,7 +11,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
-import com.test.TestApp.R
+import com.test.testapp.R
 import kotlinx.android.synthetic.main.activity_logintest.*
 
 class LoginTestActivity: AppCompatActivity(), View.OnClickListener {

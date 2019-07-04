@@ -1,4 +1,4 @@
-package com.test.TestApp.ListViewTest
+package com.test.testapp.listviewtest
 
 data class ListViewTestItemData(
         val name: String,

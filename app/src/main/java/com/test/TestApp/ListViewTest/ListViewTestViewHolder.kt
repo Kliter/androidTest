@@ -1,4 +1,4 @@
-package com.test.TestApp.ListViewTest
+package com.test.testapp.listviewtest
 
 import android.widget.TextView
 

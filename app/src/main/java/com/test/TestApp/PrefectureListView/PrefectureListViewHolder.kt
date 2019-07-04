@@ -1,4 +1,4 @@
-package com.test.TestApp.PrefectureListView
+package com.test.testapp.prefecturelistview
 
 import android.widget.ImageView
 import android.widget.TextView

@@ -1,10 +1,9 @@
-package com.test.TestApp.RecyclerViewTest
+package com.test.testapp.recyclerviewtest
 
 import android.content.Context
-import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.test.TestApp.R
+import com.test.testapp.R
 
 class RecyclerViewTestAdapter(
         private val context: Context,

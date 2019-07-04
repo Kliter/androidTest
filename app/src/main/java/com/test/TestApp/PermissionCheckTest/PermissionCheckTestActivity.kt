@@ -1,7 +1,6 @@
-package com.test.TestApp.PermissionCheckTest
+package com.test.testapp.permissionchecktest
 
 import android.Manifest
-import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.BitmapFactory
@@ -11,7 +10,7 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.appcompat.app.AppCompatActivity
-import com.test.TestApp.R
+import com.test.testapp.R
 import kotlinx.android.synthetic.main.activity_permissionchecktest.*
 import java.io.FileNotFoundException
 import java.io.InputStream

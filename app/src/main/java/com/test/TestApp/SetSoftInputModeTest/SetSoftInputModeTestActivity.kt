@@ -1,9 +1,9 @@
-package com.test.TestApp.SetSoftInputModeTest
+package com.test.testapp.setsoftinputmodetest
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.WindowManager
-import com.test.TestApp.R
+import com.test.testapp.R
 
 class SetSoftInputModeTestActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

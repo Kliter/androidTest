@@ -1,11 +1,11 @@
-package com.test.TestApp.ListViewTest
+package com.test.testapp.listviewtest
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import com.test.TestApp.R
+import com.test.testapp.R
 import kotlinx.android.synthetic.main.snippet_listview_item.view.*
 
 class ListViewTestAdapter(context: Context, val listViewTestItemList: List<ListViewTestItemData>):

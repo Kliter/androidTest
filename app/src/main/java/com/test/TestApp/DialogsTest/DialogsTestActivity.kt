@@ -1,13 +1,11 @@
-package com.test.TestApp.DialogsTest
+package com.test.testapp.dialogstest
 
-import android.content.DialogInterface
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
-import com.test.TestApp.R
+import com.test.testapp.R
 import kotlinx.android.synthetic.main.activity_dialogstest.*
-import java.nio.channels.Selector
 
 class DialogsTestActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,18 +1,16 @@
-package com.test.TestApp.Util
+package com.test.testapp.util
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.view.MenuItem
-import com.test.TestApp.ListViewTest.ListViewTestActivity
-import com.test.TestApp.MainActivity
-import com.test.TestApp.PokeCardList.PokeCardListActivity
-import com.test.TestApp.PrefectureListView.PrefectureActivity
-import com.test.TestApp.R
-import com.test.TestApp.RecyclerViewTest.RecyclerViewTestActivity
-import com.test.TestApp.TextInputTest.TextInputTestActivity
-import kotlinx.android.synthetic.main.snippet_toolbar.*
+import com.test.testapp.listviewtest.ListViewTestActivity
+import com.test.testapp.pokecardlist.PokeCardListActivity
+import com.test.testapp.prefecturelistview.PrefectureActivity
+import com.test.testapp.R
+import com.test.testapp.recyclerviewtest.RecyclerViewTestActivity
+import com.test.testapp.textinputtest.TextInputTestActivity
 
 class ToolbarManager {
 

@@ -1,4 +1,4 @@
-package com.test.TestApp.GoogleMapTest
+package com.test.testapp.googlemaptest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,7 +9,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import com.test.TestApp.R
+import com.test.testapp.R
 
 
 class GoogleMapTestActivity : AppCompatActivity(), OnMapReadyCallback {

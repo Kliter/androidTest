@@ -1,4 +1,4 @@
-package com.test.TestApp.VolleyTest
+package com.test.testapp.volleytest
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
-import com.test.TestApp.R
+import com.test.testapp.R
 import kotlinx.android.synthetic.main.fragment_volley_makestandardrequest.*
 import kotlinx.android.synthetic.main.fragment_volley_makestandardrequest.view.*
 

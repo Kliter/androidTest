@@ -1,9 +1,9 @@
-package com.test.TestApp.FirebaseTest
+package com.test.testapp.firebasetest
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.test.TestApp.R
+import com.test.testapp.R
 import kotlinx.android.synthetic.main.activity_firebasetest.*
 
 class FirebaseTestActivity: AppCompatActivity() {

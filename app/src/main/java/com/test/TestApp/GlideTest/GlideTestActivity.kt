@@ -1,10 +1,10 @@
-package com.test.TestApp.GlideTest
+package com.test.testapp.glidetest
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.test.TestApp.R
+import com.test.testapp.R
 import kotlinx.android.synthetic.main.activity_glidetest.*
 
 class GlideTestActivity: AppCompatActivity() {

@@ -1,10 +1,10 @@
-package com.test.TestApp.Dagger2Test
+package com.test.testapp.dagger2test
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.test.TestApp.R
+import com.test.testapp.R
 import javax.inject.Inject
 
 class Dagger2TestActivity : AppCompatActivity() {

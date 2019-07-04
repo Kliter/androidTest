@@ -1,12 +1,12 @@
-package com.test.TestApp.ListViewTest
+package com.test.testapp.listviewtest
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import com.test.TestApp.R
-import com.test.TestApp.Util.BottomNavigationViewManager
-import com.test.TestApp.Util.ToolbarManager
+import com.test.testapp.R
+import com.test.testapp.util.BottomNavigationViewManager
+import com.test.testapp.util.ToolbarManager
 import kotlinx.android.synthetic.main.activity_listview.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 

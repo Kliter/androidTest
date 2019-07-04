@@ -1,4 +1,4 @@
-package com.test.TestApp.MaterialSearchViewTest
+package com.test.testapp.materialsearchviewtest
 
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
@@ -8,7 +8,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.ViewGroup
 import com.miguelcatalan.materialsearchview.MaterialSearchView
-import com.test.TestApp.R
+import com.test.testapp.R
 import kotlinx.android.synthetic.main.activity_materialsearchviewtest.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 

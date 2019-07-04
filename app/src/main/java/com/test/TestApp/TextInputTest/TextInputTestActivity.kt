@@ -1,19 +1,12 @@
-package com.test.TestApp.TextInputTest
+package com.test.testapp.textinputtest
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
-import com.test.TestApp.ListViewTest.ListViewTestActivity
-import com.test.TestApp.MainActivity
-import com.test.TestApp.PokeCardList.PokeCardListActivity
-import com.test.TestApp.PrefectureListView.PrefectureActivity
-import com.test.TestApp.R
-import com.test.TestApp.RecyclerViewTest.RecyclerViewTestActivity
-import com.test.TestApp.Util.BottomNavigationViewManager
-import com.test.TestApp.Util.ToolbarManager
+import com.test.testapp.R
+import com.test.testapp.util.BottomNavigationViewManager
+import com.test.testapp.util.ToolbarManager
 import kotlinx.android.synthetic.main.activity_prefecture_listview.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 

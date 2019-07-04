@@ -1,6 +1,5 @@
-package com.test.TestApp.RecyclerViewTest
+package com.test.testapp.recyclerviewtest
 
-import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView

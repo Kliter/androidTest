@@ -1,4 +1,4 @@
-package com.test.TestApp.Dagger2Test
+package com.test.testapp.dagger2test
 
 import android.app.Application
 import okhttp3.internal.lockAndWaitNanos

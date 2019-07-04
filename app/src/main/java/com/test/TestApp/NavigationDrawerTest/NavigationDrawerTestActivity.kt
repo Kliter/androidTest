@@ -1,10 +1,10 @@
-package com.test.TestApp.NavigationDrawerTest
+package com.test.testapp.navigationdrawertest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.core.view.GravityCompat
-import com.test.TestApp.R
+import com.test.testapp.R
 import kotlinx.android.synthetic.main.activity_navigation_drawer_test.*
 
 class NavigationDrawerTestActivity : AppCompatActivity() {
